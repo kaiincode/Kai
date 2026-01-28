@@ -203,7 +203,7 @@ function ProfileWithBackground({ isTextHovered, setIsTextHovered, setIsFooterOpe
                     repeat: isTextHovered ? 0 : Infinity, 
                     ease: isTextHovered ? "easeOut" : "linear" 
                   }}
-                  className="whitespace-nowrap text-[60px] sm:text-[100px] lg:text-[150px] xl:text-[200px] font-light text-white opacity-100"
+                  className="whitespace-nowrap text-[40px] sm:text-[60px] md:text-[100px] lg:text-[150px] xl:text-[200px] font-light text-white opacity-100"
                 >
                   AI ENGINEER AND WEB DEVELOPER • AI ENGINEER AND WEB DEVELOPER •
                 </motion.div>
@@ -366,6 +366,7 @@ function ProfileWithBackground({ isTextHovered, setIsTextHovered, setIsFooterOpe
                       <p>Solana Colosseum Breakout Hackathon 2025 Participant (N.OVA)</p>
                       <p>NASA Space Apps Challenge 2025 Participant (ClimaLens)</p>
                       <p>Best Performance – Computing Technology Innovative Project (Flipside)</p>
+                      <p>Best Performance – Big Data Architecture and Application</p>
                     </motion.div>
                   </div>
                 </motion.div>

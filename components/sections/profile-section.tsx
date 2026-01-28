@@ -31,7 +31,7 @@ export function ProfileSection() {
       {/* Large Hello at top-left */}
       <motion.h2
         style={{ opacity: helloOpacity }}
-        className="absolute top-8 sm:top-12 lg:top-16 left-4 sm:left-8 lg:left-12 z-10 text-[4rem] sm:text-[6rem] lg:text-[8rem] xl:text-[12rem] leading-none font-light tracking-tight pointer-events-none select-none"
+        className="absolute top-8 sm:top-12 lg:top-16 left-4 sm:left-8 lg:left-12 z-10 text-[3rem] sm:text-[6rem] lg:text-[8rem] xl:text-[12rem] leading-none font-light tracking-tight pointer-events-none select-none"
       >
         Hello
       </motion.h2>

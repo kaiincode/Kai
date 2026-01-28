@@ -76,10 +76,10 @@ export function ServiceSection() {
               return (
                 <div key={i} className="relative overflow-hidden">
                   {/* Base dark gray */}
-                  <span className="block text-5xl leading-tight font-light text-gray-900">{node}</span>
+                  <span className="block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight font-light text-gray-900">{node}</span>
                   {/* White reveal overlay */}
                   <motion.span
-                    className="absolute inset-0 block text-5xl leading-tight font-light text-white"
+                    className="absolute inset-0 block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-tight font-light text-white"
                     style={{
                       clipPath: useTransform(lineReveal, (v) => `inset(0 ${(1 - v) * 100}% 0 0)`),
                     }}
@@ -96,7 +96,7 @@ export function ServiceSection() {
       <div className="relative max-w-7xl mx-auto">
         {/* Left - Sticky Art - centered at 30% line (2nd line from left) */}
         <div className="absolute top-0 sticky h-screen flex items-center justify-center z-0" style={{ left: '17.5%', width: '30%' }}>
-          <div className="relative w-[600px] h-[600px]">
+          <div className="relative w-[600px] h-[600px] hidden lg:block">
             {/* Central dot */}
             <svg viewBox="0 0 500 500" className="absolute inset-0 w-full h-full">
               <circle cx="250" cy="250" r="7" fill="rgba(255,255,255,1)" />
@@ -193,34 +193,34 @@ export function ServiceSection() {
           </div>
         </div>
 
-        {/* Right - 4 full-screen services stacked */}
-        <div className="relative z-10 px-12 ml-auto max-w-2xl">
+        {/* Right - 4 full-screen services stacked - centered on mobile */}
+        <div className="relative z-10 px-4 sm:px-8 lg:px-12 lg:ml-auto max-w-full lg:max-w-2xl">
           <div className="min-h-screen flex items-center text-white">
             <div>
               <p className="text-xs tracking-[0.3em] font-light mb-6 text-white/60 -ml-4">01</p>
-              <h3 className="text-5xl font-light mb-6 tracking-tight ml-4">AI/ML Solutions</h3>
-              <p className="text-lg leading-relaxed font-light text-white/90 ml-4">I design and build intelligent systems with LLMs, RAG pipelines, and self-refinement methods for smarter, context-aware user experiences across various AI-powered applications.</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-tight ml-4">AI/ML Solutions</h3>
+              <p className="text-base sm:text-lg leading-relaxed font-light text-white/90 ml-4">I design and build intelligent systems with LLMs, RAG pipelines, and self-refinement methods for smarter, context-aware user experiences across various AI-powered applications.</p>
             </div>
           </div>
           <div className="min-h-screen flex items-center text-white">
             <div>
               <p className="text-xs tracking-[0.3em] font-light mb-6 text-white/60 -ml-4">02</p>
-              <h3 className="text-5xl font-light mb-6 tracking-tight ml-4">Full-Stack Web Development</h3>
-              <p className="text-lg leading-relaxed font-light text-white/90 ml-4">I develop modern, responsive web applications using React, Next.js, and Node.js with integrated APIs and cloud databases, focusing on performance, scalability, and exceptional user experiences.</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-tight ml-4">Full-Stack Web Development</h3>
+              <p className="text-base sm:text-lg leading-relaxed font-light text-white/90 ml-4">I develop modern, responsive web applications using React, Next.js, and Node.js with integrated APIs and cloud databases, focusing on performance, scalability, and exceptional user experiences.</p>
             </div>
           </div>
           <div className="min-h-screen flex items-center text-white">
             <div>
               <p className="text-xs tracking-[0.3em] font-light mb-6 text-white/60 -ml-4">03</p>
-              <h3 className="text-5xl font-light mb-6 tracking-tight ml-4">Web3 & Blockchain</h3>
-              <p className="text-lg leading-relaxed font-light text-white/90 ml-4">I create decentralized platforms, NFT marketplaces, and AI-driven blockchain experiences on Solana and Ethereum. Building secure smart contracts and seamless wallet integrations for the next generation of Web3 applications.</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-tight ml-4">Web3 & Blockchain</h3>
+              <p className="text-base sm:text-lg leading-relaxed font-light text-white/90 ml-4">I create decentralized platforms, NFT marketplaces, and AI-driven blockchain experiences on Solana and Ethereum. Building secure smart contracts and seamless wallet integrations for the next generation of Web3 applications.</p>
             </div>
           </div>
           <div className="min-h-screen flex items-center text-white">
             <div>
               <p className="text-xs tracking-[0.3em] font-light mb-6 text-white/60 -ml-4">04</p>
-              <h3 className="text-5xl font-light mb-6 tracking-tight ml-4">Data Visualization</h3>
-              <p className="text-lg leading-relaxed font-light text-white/90 ml-4">I build interactive data dashboards, generative media tools, and immersive 3D user interfaces for digital storytelling. Transforming complex data into engaging visual narratives that drive insights and decision-making.</p>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-6 tracking-tight ml-4">Data Visualization</h3>
+              <p className="text-base sm:text-lg leading-relaxed font-light text-white/90 ml-4">I build interactive data dashboards, generative media tools, and immersive 3D user interfaces for digital storytelling. Transforming complex data into engaging visual narratives that drive insights and decision-making.</p>
             </div>
           </div>
         </div>

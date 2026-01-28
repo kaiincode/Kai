@@ -74,7 +74,7 @@ export function ExpressionSection() {
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
           <motion.h2
             style={{ opacity: headingOpacity }}
-            className="text-7xl leading-tight font-light text-center px-6"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight font-light text-center px-6"
           >
             <em className="font-serif not-italic">Innovating</em> with Intelligence.
             <br />
@@ -95,7 +95,7 @@ export function ExpressionSection() {
                 className={`absolute -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-black ${
                   isLast 
                     ? 'w-screen h-screen flex items-center justify-center' 
-                    : 'w-[640px] h-[360px] border border-white/25'
+                    : 'w-[90vw] max-w-[640px] h-auto aspect-video border border-white/25'
                 }`}
               >
                 <img

@@ -57,7 +57,7 @@ export function GetInTouchSection() {
           ))}
         </div>
 
-        <h2 className="text-[13rem] font-light tracking-tight cursor-pointer select-none" data-cursor-text="LET'S TALK">
+        <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] 2xl:text-[13rem] font-light tracking-tight cursor-pointer select-none" data-cursor-text="LET'S TALK">
           Get in Touch
         </h2>
       </motion.div>

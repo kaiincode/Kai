@@ -136,7 +136,7 @@ function ContactWithBackground({ setIsFooterOpen }: ContactWithBackgroundProps) 
                         ))}
                       </motion.h3>
                     </div>
-                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }} viewport={{ once: true }} className="text-sm leading-relaxed font-light">
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }} viewport={{ once: true }} className="text-lg leading-relaxed font-light">
                       <p>Currently available for new projects and collaborations. Open to AI/ML development, Web3 applications, and full-stack solutions. Available from immediately.</p>
                     </motion.div>
                   </div>
@@ -238,6 +238,7 @@ function ContactWithBackground({ setIsFooterOpen }: ContactWithBackgroundProps) 
                       <p>Solana Colosseum Breakout Hackathon 2025 Participant (N.OVA)</p>
                       <p>NASA Space Apps Challenge 2025 Participant (ClimaLens)</p>
                       <p>Best Performance – Computing Technology Innovative Project (Flipside)</p>
+                      <p>Best Performance – Big Data Architecture and Application</p>
                     </motion.div>
                   </div>
                 </motion.div>

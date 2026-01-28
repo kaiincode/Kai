@@ -121,7 +121,7 @@ export function HeroSection({ onMenuClick, isLoadingComplete = true }: HeroSecti
          ))}
        </motion.div>
 
-      {/* Category Labels - glitch effect animation */}
+      {/* Category Labels - glitch effect animation - responsive */}
       {[
         { text: "[AI/ML SOLUTIONS]", left: "8%", cursor: "AI & MACHINE LEARNING", delay: 2.8 },
         { text: "[WEB DEVELOPMENT]", left: "32%", cursor: "FULL-STACK DEVELOPMENT", delay: 3.0 },
@@ -133,7 +133,7 @@ export function HeroSection({ onMenuClick, isLoadingComplete = true }: HeroSecti
           initial={{ opacity: 0, filter: "blur(2px)" }}
           animate={isLoaded ? { opacity: 1, filter: "blur(0px)" } : { opacity: 0, filter: "blur(2px)" }}
           transition={{ delay: label.delay, duration: 0.8, ease: "easeOut" }}
-          className="absolute top-[50%] -translate-y-[100%] text-xs tracking-wider font-light z-20"
+          className="absolute top-[50%] -translate-y-[100%] text-[9px] sm:text-[10px] lg:text-xs tracking-wider font-light z-20 hidden sm:block"
           style={label.left ? { left: label.left } : { right: label.right }}
           data-cursor-text={label.cursor}
         >
@@ -141,29 +141,29 @@ export function HeroSection({ onMenuClick, isLoadingComplete = true }: HeroSecti
         </motion.div>
       ))}
 
-      {/* Right-side mission statement - smooth fade in */}
+      {/* Right-side mission statement - smooth fade in - responsive */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isLoaded ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 3.8, duration: 1 }}
-        className="absolute right-4 sm:right-8 lg:right-12 top-20 sm:top-32 lg:top-40 max-w-xs sm:max-w-sm lg:max-w-md text-right z-20"
+        className="absolute right-4 sm:right-8 lg:right-12 top-16 sm:top-24 lg:top-40 max-w-[200px] sm:max-w-xs lg:max-w-md text-right z-20 hidden sm:block"
       >
-        <p className="text-[9px] sm:text-[10px] lg:text-[11px] leading-relaxed tracking-wide font-light">
+        <p className="text-[8px] sm:text-[9px] lg:text-[11px] leading-relaxed tracking-wide font-light">
           I CREATE INTELLIGENT, INTERACTIVE, AND DECENTRALIZED DIGITAL EXPERIENCES COMBINING AI REASONING,
           BLOCKCHAIN TECHNOLOGY, AND MODERN WEB FRAMEWORKS TO BUILD PRODUCTS THAT EMPOWER CREATIVITY.
         </p>
       </motion.div>
 
-      {/* Main Content - smooth fade in */}
+      {/* Main Content - smooth fade in - responsive */}
       <main className="relative z-20 px-4 sm:px-8 lg:px-12 flex items-center min-h-[calc(100vh-100px)]">
         <div className="w-full">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={isLoaded ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 4.2, duration: 1.2 }}
-            className="max-w-4xl mt-16 sm:mt-24 lg:mt-32 xl:mt-92"
+            className="max-w-4xl mt-8 sm:mt-16 lg:mt-32 xl:mt-92"
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl leading-tight font-light tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl leading-tight font-light tracking-tight">
               Building <em className="font-serif not-italic">Intelligent</em> Solutions,
               <br />
               <em className="font-serif not-italic">Empowering</em> the Future <em className="font-serif not-italic">of</em> Tech.

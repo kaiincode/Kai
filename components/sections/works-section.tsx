@@ -75,6 +75,21 @@ export function WorksSection() {
 
   return (
     <section className="relative py-32 overflow-hidden">
+      {/* Dark overlay to hide original background on hover */}
+      <AnimatePresence>
+        {hoveredProject && (
+          <motion.div
+            key="overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute inset-0 bg-black z-0"
+            style={{ opacity: 0.7 }}
+          />
+        )}
+      </AnimatePresence>
+
       {/* Blurred background image on hover - using project image */}
       <AnimatePresence>
         {hoveredProject && hoveredProjectData && (
@@ -93,7 +108,7 @@ export function WorksSection() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 filter: "blur(60px) brightness(1.2)",
-                opacity: 0.3
+                opacity: 0.4
               }}
             />
           </motion.div>
@@ -109,8 +124,8 @@ export function WorksSection() {
         <div className="absolute left-[90%] top-0 bottom-0 w-[0.5px] bg-white" />
       </div>
       
-      {/* Scrolling text - centered in section works only, changes based on hover */}
-      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-0">
+      {/* Scrolling text - always centered in viewport, below images */}
+      <div className="fixed inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-0">
         <AnimatePresence mode="wait">
           {!hoveredProject ? (
             <motion.div
@@ -119,29 +134,27 @@ export function WorksSection() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="absolute"
             >
               <motion.div
                 animate={{ x: [0, -2000] }}
                 transition={{ duration: 30, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                className="whitespace-nowrap text-[200px] font-light opacity-5"
+                className="whitespace-nowrap text-[80px] sm:text-[120px] lg:text-[150px] xl:text-[200px] font-light opacity-5"
               >
                 WORKS • PORTFOLIO • PROJECTS • WORKS • PORTFOLIO • PROJECTS •
               </motion.div>
             </motion.div>
           ) : (
             <motion.div
-              key={`title-${hoveredProject}`}
+              key={hoveredProject}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="absolute"
             >
               <motion.div
                 animate={{ x: [1200, -1200] }}
                 transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                className="whitespace-nowrap text-[240px] font-light tracking-tight"
+                className="whitespace-nowrap text-[100px] sm:text-[140px] lg:text-[180px] xl:text-[240px] font-light tracking-tight"
                 style={{
                   WebkitTextStroke: "2px rgba(255, 255, 255, 0.6)",
                   color: "transparent",
@@ -173,13 +186,15 @@ export function WorksSection() {
             // Calculate position based on alignment
             const getPosition = () => {
               if (project.align === "left") {
-                return { left: "10%" } // 10% to 50% (2 sections: 10-30-50)
+                return { left: "10%" } // Desktop: 10% to 50%
               } else if (project.align === "right") {
-                return { left: "50%" } // 50% to 90% (2 sections: 50-70-90)
+                return { left: "50%" } // Desktop: 50% to 90%
               } else {
-                return { left: "30%" } // 30% to 70% (2 sections: 30-50-70)
+                return { left: "30%" } // Desktop: 30% to 70%
               }
             }
+
+            const position = getPosition()
 
             return (
               <motion.div
@@ -190,10 +205,13 @@ export function WorksSection() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                {/* Image container - 40% width (2 sections of 20%) */}
+                {/* Image container - 40% width on desktop, full width on mobile */}
                 <div 
-                  className="absolute w-[40%] group cursor-pointer"
-                  style={getPosition()}
+                  className={`relative w-full sm:w-[80%] lg:w-[40%] group cursor-pointer mx-auto lg:mx-0 ${
+                    project.align === "left" ? "lg:left-[10%]" : 
+                    project.align === "right" ? "lg:left-[50%]" : 
+                    "lg:left-[30%]"
+                  } lg:absolute`}
                   onMouseEnter={() => setHoveredProject(project.title)}
                   onMouseLeave={() => setHoveredProject(null)}
                   data-cursor-text={`VIEW ${project.title.toUpperCase()}`}
@@ -212,11 +230,11 @@ export function WorksSection() {
                   </motion.div>
                   
                   {/* Title and tags below image */}
-                  <div className={`mt-6 ${project.align === "right" ? "text-right" : project.align === "center" ? "text-center" : ""}`}>
-                    <h4 className="text-4xl font-light mb-2 group-hover:opacity-60 transition-opacity">
+                  <div className={`mt-6 ${project.align === "right" ? "lg:text-right" : project.align === "center" ? "lg:text-center" : ""}`}>
+                    <h4 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-2 group-hover:opacity-60 transition-opacity">
                       {project.title}
                     </h4>
-                    <p className="text-sm text-white/60 tracking-wider">{project.tags}</p>
+                    <p className="text-xs sm:text-sm text-white/60 tracking-wider">{project.tags}</p>
                   </div>
                 </div>
                 
