@@ -19,18 +19,18 @@ const projects = {
     type: "PROJECT",
     image: "/works/sweetlife/sweetlife.png",
     description: "A responsive website for an ice cream restaurant, built with semantic HTML, modern CSS, and vanilla JavaScript. Focused on delightful UI, accessibility, and performance.",
-    credits: "Frontend: Panacea",
+    credits: "Frontend: Kai",
     visitLink: "https://sweetlife.vercel.app"
   },
   "panacea": {
     id: 6,
-    title: "Panacea",
+    title: "Kai",
     category: "PORTFOLIO",
     type: "PLAY",
     image: "/works/panacea/panacea.png",
     description: "A modern portfolio website showcasing AI engineering and web development projects. Built with Next.js, TypeScript, and Framer Motion for smooth animations and interactions.",
-    credits: "Design & Development: Panacea",
-    visitLink: "https://panacea-dev.vercel.app"
+    credits: "Design & Development: Kai",
+    visitLink: "https://iamkai.vercel.app"
   },
   "flipside": {
     id: 1,
@@ -39,7 +39,7 @@ const projects = {
     type: "PROJECT",
     image: "/works/flipside/flipside.png",
     description: "A comprehensive blockchain analytics platform providing insights into DeFi protocols, NFT markets, and Web3 ecosystem data visualization.",
-    credits: "Lead Developer: Panacea",
+    credits: "Lead Developer: Kai",
     visitLink: "https://flipside-crypto.netlify.app"
   },
   "void": {
@@ -49,7 +49,7 @@ const projects = {
     type: "PROJECT",
     image: "/works/void/void.png",
     description: "An AI-powered NFT platform that combines machine learning with blockchain technology to create intelligent digital art and gaming experiences.",
-    credits: "AI Engineer: Panacea",
+    credits: "AI Engineer: Kai",
     visitLink: "https://void-resonance.vercel.app"
   },
   "n-ova": {
@@ -59,7 +59,7 @@ const projects = {
     type: "PROJECT",
     image: "/works/n-ova/n-ova.png",
     description: "An AI-native Web3 identity platform that leverages machine learning for decentralized identity verification and management.",
-    credits: "AI Engineer: Panacea",
+    credits: "AI Engineer: Kai",
     visitLink: "https://n-ova.vercel.app"
   },
   "genie": {
@@ -69,7 +69,7 @@ const projects = {
     type: "PROJECT",
     image: "/works/genie/genie.png",
     description: "An AI-powered mental health companion using RAG (Retrieval-Augmented Generation) to provide personalized support and guidance.",
-    credits: "AI Engineer: Panacea",
+    credits: "AI Engineer: Kai",
     visitLink: "https://genie.vercel.app"
   },
   "longchau-pms": {
@@ -79,7 +79,7 @@ const projects = {
     type: "PROJECT",
     image: "/works/longchau-pms/longchau-pms.png",
     description: "A comprehensive pharmacy management and e-commerce platform for Long Chau Pharmacy built with Next.js, TypeScript, and Supabase, covering inventory, orders, and storefront.",
-    credits: "Full-stack: Panacea",
+    credits: "Full-stack: Kai",
     visitLink: "https://long-chau-pms.vercel.app"
   },
     "tribalyn": {
@@ -89,7 +89,7 @@ const projects = {
       type: "PROJECT",
       image: "/works/tribalyn/tribalyn.png",
       description: "A virtual try-on tool for countries' traditional costumes using AI technology. Experience cultural heritage through immersive virtual fitting experiences.",
-      credits: "AI Engineer: Panacea",
+      credits: "AI Engineer: Kai",
       visitLink: "https://tribalyn.vercel.app"
     },
     "climalens": {
@@ -99,7 +99,7 @@ const projects = {
       type: "PROJECT",
       image: "/works/climalens/climalens.png",
       description: "A climate data analytics platform using AI to analyze environmental data and provide insights for sustainability initiatives.",
-      credits: "Data Scientist: Panacea",
+      credits: "Data Scientist: Kai",
       visitLink: "https://climalens.vercel.app"
     }
 }

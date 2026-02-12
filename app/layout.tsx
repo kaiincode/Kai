@@ -23,19 +23,19 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://panacea-dev.vercel.app'),
+  metadataBase: new URL('https://iamkai.vercel.app'),
   title: {
-    default: "Panacea",
-    template: "%s | Panacea"
+    default: "Kai",
+    template: "%s | Kai"
   },
   description: "AI Engineer and Web Developer creating intelligent digital solutions through cutting-edge AI, blockchain technology, and modern web development. Specializing in AI/ML, Web3, and full-stack applications.",
-  applicationName: "Panacea Portfolio",
+  applicationName: "Kai Portfolio",
   authors: [
-    { name: "Panacea", url: "https://panacea-dev.vercel.app" },
+    { name: "Kai", url: "https://iamkai.vercel.app" },
     { name: "Nguyễn Lê Trường Thiên" }
   ],
-  creator: "Panacea",
-  publisher: "Panacea",
+  creator: "Kai",
+  publisher: "Kai",
   keywords: [
     "AI Engineer",
     "Web Developer",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     "React",
     "Python",
     "Portfolio",
-    "Panacea",
+    "Kai",
     "RAG Pipeline",
     "LLM",
     "Smart Contracts",
@@ -66,22 +66,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://panacea-dev.vercel.app",
-    siteName: "Panacea Portfolio",
-    title: "Panacea",
+    url: "https://iamkai.vercel.app",
+    siteName: "Kai Portfolio",
+    title: "Kai",
     description: "AI Engineer and Web Developer creating intelligent digital solutions through cutting-edge AI, blockchain technology, and modern web development. Specializing in AI/ML, Web3, and full-stack applications.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Panacea - AI Engineer & Web Developer",
+        alt: "Kai - AI Engineer & Web Developer",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Panacea",
+    title: "Kai",
     description: "AI Engineer and Web Developer creating intelligent digital solutions through cutting-edge AI, blockchain technology, and modern web development.",
     creator: "@panacea___005",
     images: ["/og-image.png"],

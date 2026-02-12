@@ -1,8 +1,8 @@
 {
-  "name": "panacea",
+  "name": "kai",
   "version": "1.0.0",
-  "description": "Panacea - AI Engineer & Web Developer Portfolio",
-  "author": "Panacea (Thiên Nguyễn Lê Trương)",
+  "description": "Kai - AI Engineer & Web Developer Portfolio",
+  "author": "Kai (Thiên Nguyễn Lê Trương)",
   "private": true,
   "scripts": {
     "build": "next build",

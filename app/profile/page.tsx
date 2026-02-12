@@ -174,7 +174,7 @@ function ProfileWithBackground({ isTextHovered, setIsTextHovered, setIsFooterOpe
                     className="space-y-8"
                   >
                     <p className="text-lg leading-relaxed font-light">
-                      Panacea, AI Engineer and Web Developer. Born in 2005. I'm a Computer Science student at Swinburne University of Technology majoring in Artificial Intelligence, with hands-on experience across AI systems, Web3 platforms, and full-stack development. My journey began with a deep curiosity for how intelligent systems can shape user experiences — leading me to build projects that merge AI with blockchain, data visualization, and creative media.
+                      Kai, AI Engineer and Web Developer. Born in 2005. I'm a Computer Science student at Swinburne University of Technology majoring in Artificial Intelligence, with hands-on experience across AI systems, Web3 platforms, and full-stack development. My journey began with a deep curiosity for how intelligent systems can shape user experiences — leading me to build projects that merge AI with blockchain, data visualization, and creative media.
                     </p>
 
                     <p className="text-sm leading-relaxed font-light text-white/80">

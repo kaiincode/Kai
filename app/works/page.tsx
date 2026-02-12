@@ -12,7 +12,7 @@ import { CustomCursor } from "@/components/custom-cursor"
 const projects = [
   { 
     id: 1, 
-    title: "Panacea", 
+    title: "Kai", 
     category: "PORTFOLIO", 
     type: "PLAY",
     span: "col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 lg:row-span-2",

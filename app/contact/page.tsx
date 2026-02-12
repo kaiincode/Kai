@@ -270,10 +270,10 @@ function ContactWithBackground({ setIsFooterOpen }: ContactWithBackgroundProps) 
                       </motion.h3>
                     </div>
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 1.0, duration: 0.8, ease: "easeOut" }} viewport={{ once: true }} className="text-lg leading-relaxed font-light space-y-3">
-                      <a href="https://github.com/Panacea2005" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-60 transition-opacity" data-cursor-text="GITHUB">
+                      <a href="https://github.com/kaiincode" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-60 transition-opacity" data-cursor-text="GITHUB">
                         GitHub <span className="text-xs">↗</span>
                       </a>
-                      <a href="https://www.linkedin.com/in/panaceadev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-60 transition-opacity" data-cursor-text="LINKEDIN">
+                      <a href="https://www.linkedin.com/in/kaiisme" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-60 transition-opacity" data-cursor-text="LINKEDIN">
                         LinkedIn <span className="text-xs">↗</span>
                       </a>
                       <a href="https://x.com/panacea___005" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-60 transition-opacity" data-cursor-text="X / TWITTER">

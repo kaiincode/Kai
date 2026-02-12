@@ -18,8 +18,8 @@ const menuItems = [
 ]
 
 const socialLinks = [
-  { name: "GitHub", url: "https://github.com/Panacea2005" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/panaceadev" },
+  { name: "GitHub", url: "https://github.com/kaiincode" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/kaiisme" },
   { name: "X", url: "https://x.com/panacea___005" },
   { name: "YouTube", url: "https://www.youtube.com/@Panacea2005" },
   { name: "Instagram", url: "https://www.instagram.com/__tthien/" },
@@ -137,7 +137,7 @@ export function MenuOverlay({ isOpen, onClose, isFooterOpen = false }: MenuOverl
                 transition={{ delay: 0.6, duration: 0.6 }}
                 className={`text-xs font-light ${textColorTertiary} tracking-wider`}
               >
-                <p>© 2025 PANACEA</p>
+                <p>© 2025 KAI</p>
                 <p className="mt-1">HO CHI MINH CITY, VIETNAM</p>
               </motion.div>
             </div>

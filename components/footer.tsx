@@ -222,7 +222,7 @@ export function Footer({ transitionProgress, onFooterOpen }: FooterProps) {
             <p className="text-xs tracking-wider mb-4 italic">SNS</p>
             <div className="space-y-2 text-sm font-light">
               <a
-                href="https://github.com/Panacea2005"
+                href="https://github.com/kaiincode"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-end gap-2 hover:opacity-60 transition-opacity"
@@ -231,7 +231,7 @@ export function Footer({ transitionProgress, onFooterOpen }: FooterProps) {
                 GitHub <span className="text-xs">↗</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/panaceadev"
+                href="https://www.linkedin.com/in/kaiisme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-end gap-2 hover:opacity-60 transition-opacity"

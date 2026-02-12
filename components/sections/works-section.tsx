@@ -5,7 +5,7 @@ import { useState } from "react"
 
 const projects = [
   {
-    title: "Panacea",
+    title: "Kai",
     tags: "PORTFOLIO",
     gradient: "from-pink-500 to-purple-600",
     align: "center", // 30% to 70%

@@ -13,7 +13,7 @@ export function ProfileSection() {
   // Lines with serif-emphasized words
   const lines: ReactNode[] = useMemo(
     () => [
-      <>I'm <em className="font-serif not-italic">Panacea</em>.</>,
+      <>I'm <em className="font-serif not-italic">Kai</em>.</>,
       <>AI Engineer and <em className="font-serif not-italic">Web</em> Developer.</>,
       <>I build <em className="font-serif not-italic">intelligent</em> systems and</>,
       <>decentralized applications, based in</>,
