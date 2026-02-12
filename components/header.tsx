@@ -17,7 +17,7 @@ export function Header({ onMenuClick }: HeaderProps) {
         className="text-xs tracking-wider font-light"
       >
         <Link href="/" className="hover:opacity-60 transition-opacity" data-cursor-text="HOME">
-          PANACEA
+          KAI
         </Link>
       </motion.div>
       <motion.button
